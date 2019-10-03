@@ -1,4 +1,4 @@
-# Geo-Weather Sample REST API Controller
+# Geo-Weather REST API Controller
 
 `http://localhost:8080/api/geolocation`
 
