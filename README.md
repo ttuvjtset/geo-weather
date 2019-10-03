@@ -1,23 +1,25 @@
 # Geo-Weather Sample REST API Controller
 
-### REST API:
 `http://localhost:8080/api/geolocation`
-**Sample POST Request with JSON:**
+
+ - **Sample POST Request with JSON:**
   { 
 		"zipCode": "11111"
   }
-**Response:**
+  
+ - **Response:**
   {
     "timeZone": "GMT +02:00"
   }
 
 `http://localhost:8080/api/weather`
-**Sample POST Request with JSON:**
+
+ - **Sample POST Request with JSON:**
   { 
 		"cityCode": "1"
   }
   
-**Response:**
+ - **Response:**
   {
   "temperature": 5.5,
   "humidity": 80.5,
