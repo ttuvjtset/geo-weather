@@ -1,0 +1,12 @@
+2019-10-03 21:03:13,811 [qtp2073640037-18] INFO  controller.GeoLocationController - Request: {"zipCode": "111112"}
+2019-10-03 21:03:13,895 [qtp2073640037-18] INFO  controller.GeoLocationController - Response: 400 TimeZoneByZipError{error='Zip code not found'}
+2019-10-03 21:03:18,828 [qtp2073640037-12] INFO  controller.GeoLocationController - Request: {"zipCode": "11111"}
+2019-10-03 21:03:18,830 [qtp2073640037-12] INFO  controller.GeoLocationController - Response: 200 TimeZoneByZipResponse{timeZone='GMT +02:00'}
+2019-10-03 21:03:54,417 [qtp2073640037-16] INFO  controller.WeatherController - Request: {"cityCode": "1"}
+2019-10-03 21:03:54,422 [qtp2073640037-16] INFO  controller.WeatherController - Response: 200 WeatherInCity{temperature=5.5, humidity=80.5, pressure=801.3, wind=Wind{direction='East', strength='2-3'}}
+2019-10-03 21:03:57,954 [qtp2073640037-15] INFO  controller.WeatherController - Request: {"cityCode": "a"}
+2019-10-03 21:03:57,956 [qtp2073640037-15] INFO  controller.WeatherController - Response: 400 WeatherByCityCodeError{error='City code must be numeric'}
+2019-10-03 21:04:01,086 [qtp2073640037-17] INFO  controller.WeatherController - Request: {}
+2019-10-03 21:04:01,087 [qtp2073640037-17] INFO  controller.WeatherController - Response: 400 WeatherByCityCodeError{error='City code not specified'}
+2019-10-03 21:04:03,863 [qtp2073640037-15] INFO  controller.WeatherController - Request: 
+2019-10-03 21:04:03,864 [qtp2073640037-15] INFO  controller.WeatherController - Response: 400 WeatherByCityCodeError{error='Request must be in JSON format'}

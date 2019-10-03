@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <File name="LogToFile" fileName="logs/servlet.log">
+            <PatternLayout>
+                <Pattern>%d [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="controller.GeoLocationController" level="info" additivity="false">
+            <AppenderRef ref="LogToFile"/>
+        </Logger>
+
+        <Logger name="controller.WeatherController" level="info" additivity="false">
+            <AppenderRef ref="LogToFile"/>
+        </Logger>
+
+        <Root level="WARN">
+            <!--DEBUG, INFO, WARN, ERROR, FATAL-->
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
